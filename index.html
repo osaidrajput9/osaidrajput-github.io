@@ -5,95 +5,226 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
   <style>
-    /* Global styles */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.5;
-      color: #444;
-    }
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
 
-    /* Header styles */
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
+.row {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333333;
+}
 
-    h2 {
-      font-size: 1.5rem;
-      font-weight: normal;
-      margin-bottom: 20px;
-    }
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333333;
+}
 
-    /* Main section styles */
-    main {
-      padding: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333333;
+}
 
-    .left-col {
-      width: 100%;
-      padding-right: 20px;
-      margin-bottom: 20px;
-    }
+p {
+  margin-bottom: 10px;
+  color: #333333;
+}
 
-    .right-col {
-      width: 100%;
-      padding-left: 20px;
-      margin-bottom: 20px;
-    }
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-    .experience {
-      margin-bottom: 20px;
-    }
+li {
+  margin-bottom: 10px;
+  color: #333333;
+}
 
-    .experience h3 {
-      margin-bottom: 10px;
-    }
+a {
+  color: #333333;
+  text-decoration: none;
+}
 
-    .experience p {
-      margin-bottom: 10px;
-    }
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
 
-    /* Footer styles */
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
+  h2 {
+    font-size: 20px;
+  }
 
-    /* Media queries */
-    @media only screen and (min-width: 768px) {
-      main {
-        flex-wrap: nowrap;
-      }
+  h3 {
+    font-size: 18px;
+  }
 
-      .left-col {
-        width: 60%;
-        padding-right: 40px;
-      }
+  p {
+    font-size: 14px;
+  }
 
-      .right-col {
-        width: 40%;
-        padding-left: 40px;
-      }
-    }
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
+
+  }
+
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 74.99%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    float: left;
+  }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 74.99%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
   </style>
 </head>
 <body>
